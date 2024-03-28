@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono";
+    color: #000;
+}
+
+body {
+    height: 100%;
+    display: grid;
+    grid-template-rows: minmax(150px, auto) minmax(70vh, 500px) 100px;
+}
+
+/* Styles for the header section */
+header {
+    background-color: #E5E5E5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-header img {
+    width: 50px;
+}
+
+.description {
+    font-size: 1.1rem;
+    max-width: 700px;
+    text-wrap: pretty;
+}
+
+/* Styles for the main section*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-addbtn {
+    margin: 30px;
+}
+
+.add-btn {
+    font-size: 1.6rem;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.add-btn:hover {
+    background-color: #e5e5e54b;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container-table {
+    width: 60%;
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+table {
+    width: 100%;
+    min-width: 100px;
+}
+
+.table-header th{
+    border: 1px solid #14213D;
+    padding: 5px;
+}
+
+.book {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #14213D;
+}
+
+.status {
+    background-color: #e5e5e5b9;
+    border-radius: 5px;
+}
+
+.status:hover {
+    cursor: pointer;
+}
+
+.delete {
+    font-size: 0.9rem;
+    background-color: rgb(226, 53, 53);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.delete:hover {
+    cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+    background-color: #E5E5E5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 1.3rem;
+}

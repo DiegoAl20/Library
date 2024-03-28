@@ -6,20 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Library</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="container-header">
             <h1>My Library</h1>
-            <img src="" alt="books ilustration">
+            <img src="assets/books-svgrepo-com.svg" alt="books ilustration" loading="lazy">
         </div>
-        <p>I created this project to practice using objects. It is part of The Odin Project's JavaScript study path. You can find the source code <a href="">here.</a></p>
+        <p class="description">I created this project to practice using objects. It is part of The Odin Project's
+        JavaScript study path. You can find the source code <a href="">here.</a></p>
     </header>
 
     <main>
-        <div>
-            <button>+ Add Book</button>
+        <div class="container-addbtn">
+            <button class="add-btn">+ Add Book</button>
         </div>
         <section class="container-table">
             <table>
@@ -28,6 +33,13 @@
                     <th>Author</th>
                     <th>Pages</th>
                     <th>Status</th>
+                </tr>
+                <tr>
+                    <td class="book">The Hobbit</td>
+                    <td class="book">J.R.R. Tolkien</td>
+                    <td class="book">295</td>
+                    <td class="book status">Unread</td>
+                    <td class="delete book">Remove</td>
                 </tr>
             </table>
         </section>
