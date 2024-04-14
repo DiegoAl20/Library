@@ -19,37 +19,71 @@
             <img src="assets/books-svgrepo-com.svg" alt="books ilustration" loading="lazy">
         </div>
         <p class="description">I created this project to practice using objects. It is part of The Odin Project's
-        JavaScript study path. You can find the source code <a href="">here.</a></p>
+            JavaScript study path. You can find the source code <a href="https://github.com/DiegoAl20/Library">here.</a></p>
     </header>
 
     <main>
+        <dialog id="book-dialog">
+            <form method="dialog" class="book-form">
+
+                <p>
+                    <label for="name">Book name:</label>
+                    <input id="name" name="book-name" type="text" maxlength="100" required>
+                </p>
+                <p>
+                    <label for="author">Author:</label>
+                    <input id="author" name="author" type="text" maxlength="30" required>
+                </p>
+
+                <p>
+                    <label for="pages">number of pages:</label>
+                    <input id="pages" name="pages" type="text" maxlength="8" required>
+                </p>
+
+                <p>
+                    <label for="status">Have you read it?:</label>
+                    <input id="status" type="checkbox" checked>
+                </p>
+                <div>
+                    <button type="submit" id="submit-modal" class="btn-modal">Submit</button>
+                </div>
+                <div>
+                    <button id="close-modal" class="btn-modal">Close</button>
+                </div>
+            </form>
+        </dialog>
+
         <div class="container-addbtn">
-            <button class="add-btn">+ Add Book</button>
+            <button class="add-btn" id="add-book">+ Add Book</button>
         </div>
         <section class="container-table">
             <table>
-                <tr class="table-header">
-                    <th>Name</th>
-                    <th>Author</th>
-                    <th>Pages</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td class="book">The Hobbit</td>
-                    <td class="book">J.R.R. Tolkien</td>
-                    <td class="book">295</td>
-                    <td class="book status">Unread</td>
-                    <td class="delete book">Remove</td>
-                </tr>
+                <tbody id="table">
+                    <tr class="table-header">
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Pages</th>
+                        <th>Status</th>
+                    </tr>
+                    <tr>
+                        <td class="book">The Hobbit</td>
+                        <td class="book">J.R.R. Tolkien</td>
+                        <td class="book">295</td>
+                        <td class="book status">Unread</td>
+                        <td id="remove" class="delete book">Remove</td>
+                    </tr>
+                </tbody>
             </table>
         </section>
     </main>
 
     <footer>
         <p>
-            Made by <a href="">DiegoAl20</a>
+            Made by <a href="https://github.com/DiegoAl20">DiegoAl20</a>
         </p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
